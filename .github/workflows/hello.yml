@@ -1,5 +1,5 @@
 # github-actions-zero-to-hero
-name: Hello
+name: Hello Krishan
 
 on:
    push:
@@ -12,4 +12,7 @@ greet:
     run-on: ubuntu-latest
 steps: 
     - name: say hello to users
-      run: echo "Hello dosto"
+      run: echo "Hello Dosto"
+
+    - name: say hello to username
+      run: echo "Hello $USER"
