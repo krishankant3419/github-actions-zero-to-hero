@@ -1,0 +1,8 @@
+# github-actions-zero-to-hero
+name: Hello
+
+on:
+   push:
+       branches:  (main)
+#these are my jobs
+jobs: 
