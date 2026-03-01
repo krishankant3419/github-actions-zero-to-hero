@@ -5,4 +5,11 @@ on:
    push:
        branches:  (main)
 #these are my jobs
-jobs: 
+jobs: null
+
+#this is the name of the job
+greet: 
+    run-on: ubuntu-latest
+steps: 
+    - name: say hello to users
+      run: echo "Hello dosto"
