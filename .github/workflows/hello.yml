@@ -1,18 +1,17 @@
-# github-actions-zero-to-hero
 name: Hello Krishan
 
 on:
-   push:
-       branches:  (main)
-#these are my jobs
+  push:
+    branches:
+      - main   # branch name list format में होना चाहिए
+
 jobs:
+  greet:
+    runs-on: ubuntu-latest   # runs-on (not run-on)
 
-#this is the name of the job
- greet: 
-    run-on: ubuntu-latest
-    steps: 
-      - name: say hello to users
-       run: echo "Hello Dosto"
+    steps:
+      - name: Say hello to users
+        run: echo "Hello Dosto"
 
-      - name: say hello to username
+      - name: Say hello to username
         run: echo "Hello $USER"
