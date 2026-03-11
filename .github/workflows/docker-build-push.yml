@@ -27,6 +27,7 @@ jobs:
         context: .
         push: true
         tags: KRISHANKANT3419/devops-python-app:latest
+        
 
 
 
